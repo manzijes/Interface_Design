@@ -1,6 +1,8 @@
 # Interface_Design
 
-## HFU Kurs "Interface Design" Übung 5
+## HFU Kurs "Interface Design"
+
+### Übung 5
 
 Gestalten und prototypisieren Sie eine grafische Umsetzung des Interfaces.
 Nutzen Sie hierzu eines der nachfolgenden Prototyping-Tools:
