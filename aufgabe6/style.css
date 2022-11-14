@@ -1,0 +1,159 @@
+*{
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+div{
+    width: 100%;
+}
+
+i{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 400;
+}
+
+svg {
+    font-size: 75px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.display{
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 100%;
+    min-height: 6cm;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.select{
+    min-height: 4.6cm;
+    max-width: 4.6cm;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up, .down {
+    font-size: 60px;
+    padding: 10px;
+    color: dimgrey;
+}
+
+.up:hover, .down:hover{
+    cursor: pointer;
+}
+
+.up{
+    margin-bottom: -30px;
+}
+
+.down{
+    margin-top: -30px;
+}
+
+.animal .select svg, .accessory .select svg{
+    display: none;
+}
+
+.animal .select svg.active, .accessory .select svg.active{
+    display: inline;
+}
+
+.black{
+    background-color: black;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.led-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 7px solid salmon;
+    border-radius: 27px;
+    max-width: 20.8cm;
+    animation: changecolor 5s infinite;
+}
+
+.check{
+    border-radius: 50%;
+    background-color: white;
+    border-color: black;
+    padding: 0 1.6rem;
+    color: black;
+
+     /*
+    Play with transition settings (time, ease type)
+    */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.check:hover{
+    cursor: pointer;
+}
+
+.checked{
+    color: lightseagreen;
+
+     /*
+    Play with transition settings (time, ease type)
+    */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+@keyframes changecolor {
+    20% {border-color: lightblue;}
+    50% {border-color: lightseagreen;}
+    70% {border-color: lightgoldenrodyellow;}
+  }
