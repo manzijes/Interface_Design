@@ -15,6 +15,19 @@ Dauer: ca. 2–3 Stunden
 
 ### Pages Link
 
-https://manzijes.github.io/Interface_Design/
+https://manzijes.github.io/Interface_Design/aufgabe5
+
+WENN ES NICHT FUNKTIONIERT NEU LADEN
+
+***
+
+### Übung 6 - Microinteractions
+
+1. ...
+2. Setzen Sie mindestens eine der Micro Interactions prototypisch um. 
+
+### Pages Link
+
+https://manzijes.github.io/Interface_Design/aufgabe6
 
 WENN ES NICHT FUNKTIONIERT NEU LADEN
