@@ -171,7 +171,8 @@ svg {
 .d-none{
     visibility: hidden;
     opacity: 0;
-    height: 0 !important;
+    display: none;
+    transition: all 0.5s;
 }
 
 @keyframes changecolor {
