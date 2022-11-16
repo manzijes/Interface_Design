@@ -18,7 +18,8 @@ $(document).ready(function () {
             $(".color .select").removeClass("blue")
             $(".color .select").addClass("black");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
     // change color on arrow up
@@ -39,7 +40,8 @@ $(document).ready(function () {
             $(".color .select").removeClass("blue")
             $(".color .select").addClass("green");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
     // change animal on arrow down
@@ -60,7 +62,8 @@ $(document).ready(function () {
             $(".fa-cat").removeClass("active");
             $(".fa-kiwi-bird").addClass("active");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
      // change animal on arrow up
@@ -81,7 +84,8 @@ $(document).ready(function () {
             $(".fa-cat").removeClass("active");
             $(".fa-crow").addClass("active");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
       // change accessory on arrow down
@@ -102,7 +106,8 @@ $(document).ready(function () {
             $(".fa-mask").removeClass("active");
             $(".fa-headphones").addClass("active");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
      // change accessory on arrow up
@@ -123,17 +128,19 @@ $(document).ready(function () {
             $(".fa-mask").removeClass("active");
             $(".fa-hat-wizard").addClass("active");
         }
-        $(".check").removeClass("checked");
+        $(".check").addClass("checked");
+        checkIfOriginalSettings();
     });
 
-    // change color of check on click
-    $(".check").click(function () {
-        $(this).addClass("checked");
-    });
+    function checkIfOriginalSettings() {
+        if($(".fa-kiwi-bird").hasClass("active") && $(".fa-headphones").hasClass("active") && $(".select").hasClass("black")){
+            $(".check").removeClass("checked");
+        }
+    }
 
     $(".lock").click(function () {
         $(".check").removeClass("checked");
-        $(".display").toggleClass("d-none");
+        $(".page").toggleClass("d-none");
     });
 
 });

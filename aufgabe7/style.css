@@ -122,9 +122,9 @@ svg {
 .check{
     border-radius: 50%;
     background-color: white;
-    border-color: black;
+    border: 2px solid lightgrey;
     padding: 0 27px;
-    color: black;
+    color: lightgrey;
 
      /*
     Play with transition settings (time, ease type)
@@ -141,7 +141,8 @@ svg {
 }
 
 .checked{
-    color: lightseagreen;
+    border: 2px solid black;
+    color: black;
 
      /*
     Play with transition settings (time, ease type)
@@ -173,6 +174,20 @@ svg {
     opacity: 0;
     transition: all 0.3s;
     position: absolute;
+}
+
+.confirm button svg{
+    max-width: 20px;
+}
+
+.preview-div svg {
+    font-size: 100px;
+}
+
+.preview-div p{
+    margin-top: 3rem;
+    font-family: monospace;
+    font-size: 16px;
 }
 
 @keyframes changecolor {
