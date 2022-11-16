@@ -132,6 +132,7 @@ $(document).ready(function () {
     });
 
     $(".lock").click(function () {
+        $(".check").removeClass("checked");
         $(".display").toggleClass("d-none");
     });
 
