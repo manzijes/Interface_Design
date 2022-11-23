@@ -24,6 +24,11 @@ svg {
     font-size: 75px;
 }
 
+.select-wrap svg {
+    position: relative;
+    z-index: 999999999999999999;
+}
+
 .wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +119,25 @@ svg {
     background-color: lightgreen;
 }
 
+.greenColor.check{
+    color: green;
+    border-color: green;
+}
+
+.confirmPage .check svg{
+    max-width: 17.09px;
+}
+
+.offPage{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999;
+    background-color: black;
+}
+
+.off{
+    margin-right: 15px;
+}
+
 .led-container{
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +150,11 @@ svg {
     border-radius: 27px;
     max-width: 20.8cm;
     animation: changecolor 5s infinite;
+    height: 324px;
+}
+
+.no-light{
+    border: 7px solid transparent !important;
 }
 
 .check{
@@ -161,6 +190,12 @@ svg {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.lockPage{
+    position: absolute;
+    z-index: 9999999999999999999999999;
+    background: white;
 }
 
 .lock-div{

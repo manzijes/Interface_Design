@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    let saveSound= new Audio('audio/confirmation.wav');
+    let click = new Audio("audio/click.wav");
+    let power = new Audio("audio/on.wav");
+
     // change color on arrow down
     $(".color .down").click(function () {
         if($(this).siblings().hasClass("black")){
@@ -19,6 +23,7 @@ $(document).ready(function () {
             $(".color .select").addClass("black");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -41,6 +46,7 @@ $(document).ready(function () {
             $(".color .select").addClass("green");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -63,6 +69,7 @@ $(document).ready(function () {
             $(".fa-kiwi-bird").addClass("active");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -85,6 +92,7 @@ $(document).ready(function () {
             $(".fa-crow").addClass("active");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -107,6 +115,7 @@ $(document).ready(function () {
             $(".fa-headphones").addClass("active");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -129,6 +138,7 @@ $(document).ready(function () {
             $(".fa-hat-wizard").addClass("active");
         }
         $(".check").addClass("checked");
+        $(".check").removeClass("greenColor");
         checkIfOriginalSettings();
     });
 
@@ -139,11 +149,57 @@ $(document).ready(function () {
     }
 
     $(".lock").click(function () {
-        $(".check").removeClass("checked");
-        $(".page").toggleClass("d-none");
+        if($(".offPage").hasClass("d-none")){
+            click.play();
+            $(".lockPage").toggleClass("d-none");
+
+            if($(".confirmPage").hasClass("d-none")){
+                $(".settings").removeClass("d-none");
+                $(".check").removeClass("checked");
+            } else {
+                $(".settings").addClass("d-none");
+            }
+            
+        }
     });
 
-    var audio = new Audio('audio_file.mp3');
-    audio.play();
+    $(".confirm").click(function () {
+
+        if($(this).hasClass("checked")){
+            $(".confirmPage").removeClass("d-none");
+            $(".settings").addClass("d-none");
+        }
+    });
+
+    $(".save").click(function () {
+        $(".confirmPage").addClass("d-none");
+        $(".settings").removeClass("d-none");
+        $(".check").removeClass("checked");
+        saveSound.play();
+    });
+
+    $(".confirmPage .quit").click(function () {
+        $(".confirmPage").addClass("d-none");
+        $(".settings").removeClass("d-none");
+    });
+
+    $(".off").click(function () {
+        if($(".offPage").hasClass("d-none")){
+            $(".led-container").addClass("no-light");
+
+            $(".offPage").removeClass("d-none");
+
+            $(".confirmPage").addClass("d-none");
+            $(".settings").addClass("d-none");
+
+            $(".lockPage").removeClass("d-none");
+        } else{
+            $(".led-container").removeClass("no-light");
+            $(".offPage").addClass("d-none");
+            power.play();
+        }
+    });
+    
+
 
 });

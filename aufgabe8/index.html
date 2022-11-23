@@ -21,8 +21,8 @@
     <div class="wrapper">
         <div class="led-container">
             
-            <div class="display page">
-                <button style="visibility: hidden;" class="check"><i style="visibility: hidden;"
+            <div class="display settings status page">
+                <button style="visibility: hidden;" class="check quit"><i style="visibility: hidden;"
                         class="fa-solid fa-check"></i></button>
                 <div class="select-wrap animal">
                     <i class="fa-solid fa-sort-up up"></i>
@@ -51,26 +51,30 @@
                     <div class="select black"></div>
                     <i class="fa-solid fa-sort-down down"></i>
                 </div>
-                <button class="check"><i class="fa-solid fa-check"></i></button>
+                <button class="check confirm"><i class="fa-solid fa-check"></i></button>
             </div>
 
-            <div class="display page d-none">
+            <div class="display lockPage status page d-none">
                 <i class="fa-solid fa-kiwi-bird active"></i>
             </div>
 
-            <div class="display d-none confirm">
-                <button class="check"><i class="fa-solid fa-xmark"></i></button>
+            <div class="display d-none confirmPage">
+                <button class="check quit"><i class="fa-solid fa-xmark"></i></button>
                 <div class="preview-div">
                     <i class="fa-solid fa-kiwi-bird active"></i>
                     <p>Bist du sicher, dass du diese Einstellungen <br> übernehmen möchtest?</p>
                 </div>
-                <button class="check"><i class="fa-solid fa-check"></i></button>
+                <button class="check save"><i class="fa-solid fa-check"></i></button>
+            </div>
+
+            <div class="display d-none offPage">
             </div>
 
         </div>
 
         <div class="lock-div">
-            <button class="lock">Lock</button>
+            <button class="off">Power</button>
+            <button class="lock">Sperren / Entsperren</button>
         </div>
     </div>
 
