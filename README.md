@@ -31,3 +31,24 @@ WENN ES NICHT FUNKTIONIERT NEU LADEN
 https://manzijes.github.io/Interface_Design/aufgabe6
 
 WENN ES NICHT FUNKTIONIERT NEU LADEN
+
+***
+
+### Übung 7 - Animations
+
+### Pages Link
+
+https://manzijes.github.io/Interface_Design/aufgabe7
+
+WENN ES NICHT FUNKTIONIERT NEU LADEN
+
+***
+
+### Übung 8 - UI Audio Design
+
+### Pages Link
+
+https://manzijes.github.io/Interface_Design/aufgabe8
+
+WENN ES NICHT FUNKTIONIERT NEU LADEN
+
